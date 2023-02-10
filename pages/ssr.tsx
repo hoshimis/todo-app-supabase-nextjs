@@ -43,11 +43,11 @@ const Ssr: NextPage<StaticProps> = ({ tasks, notices }) => {
           </li>
         ))}
       </ul>
-      <Link href="/ssg" prefetch={false}>
-        <a className="mv-3 text-xs">Link to-ssg</a>
+      <Link href="/ssg" className="text-x3 mb-3" prefetch={false}>
+        Link to-ssg
       </Link>
-      <Link href="/isr" prefetch={false}>
-        <a className="mv-3 text-xs">Link to-isr</a>
+      <Link href="/isr" className="text-x3 mb-3" prefetch={false}>
+        Link to-isr
       </Link>
       <button className="text-x3 mb-3" onClick={() => router.push('/ssg')}>
         Route to ssg
